@@ -1,4 +1,5 @@
 .form-input {
+  color: white;
   display:block;
   background: transparent;
   border: none;
@@ -7,6 +8,5 @@
   /*padding: 1em 0 1em 0;
   margin: 0.5em 0 0.5em 0;*/
   margin: 0 7em;
-  width: 56.5em;
-  
+  width: 56.5em;  
 }

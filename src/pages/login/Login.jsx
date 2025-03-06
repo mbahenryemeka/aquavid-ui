@@ -21,8 +21,21 @@ const Login = () => {
     <div className="container">
       <div className="left-side">
         <p className="login-text">Login</p>
-        <FormInput placeholder="Username" type="text" required/>
-        <FormInput placeholder="Password" type="password" required/>        
+         {/* Pass value and onChange to FormInput */}
+         <FormInput 
+          placeholder="Username" 
+          type="text" 
+          value={username} 
+          onChange={handleUsernameChange} 
+          required
+        />
+        <FormInput 
+          placeholder="Password" 
+          type="password" 
+          value={password} 
+          onChange={handlePasswordChange} 
+          required
+        />       
         <p className="forget-password">forget password?</p> 
         <button className="login-button">Login</button>
         <div className="account-signup-container">
