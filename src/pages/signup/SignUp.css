@@ -45,7 +45,7 @@
 }
 
 
-.already-have-account-login-container{
+.mini-container{
   display: flex;
   justify-content: space-between;
   margin-top: 70px;

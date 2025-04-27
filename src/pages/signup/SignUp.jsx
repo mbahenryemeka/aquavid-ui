@@ -1,6 +1,8 @@
 import React from "react";
 import FormInput from "../../components/FormInput";
 import "./signUp.css";
+import LargeButton from "../../components/LargeButton";
+import SmallButton from "../../components/SmallButton";
 
 function SignUp() {
   return (
@@ -12,14 +14,14 @@ function SignUp() {
         <FormInput placeholder="Email Address" type="email" />
         <FormInput placeholder="Password" type="password" />
         <FormInput placeholder="Confirm Password" type="password" />
-        <button className="signup-button">sign up</button>
-        <div className="already-have-account-login-container">
+        <LargeButton label="Sign up" />
+        <div className="mini-container">
           <div>
             <p className="have-account">Already have an account?</p>
           </div>
           <div>
-            <button className="have-account-login">Login</button>
-          </div> 
+          <SmallButton label="login"/>
+          </div>          
         </div>
       </div>
       <div className="right-side">

@@ -1,5 +1,4 @@
-
-.sign-up-button {
+.small-button {
   border:none;
   background-color:#222121;
   color: #7F7C7C;
@@ -8,4 +7,4 @@
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   margin-left:35em
-}
+} 

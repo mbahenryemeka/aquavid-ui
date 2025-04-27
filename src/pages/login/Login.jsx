@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
 import FormInput from "../../components/FormInput";
+import LargeButton from "../../components/LargeButton";
+import SmallButton from "../../components/SmallButton";
 
 
 const Login = () => {
@@ -37,13 +39,13 @@ const Login = () => {
           required
         />       
         <p className="forget-password">forget password?</p> 
-        <button className="login-button">Login</button>
+        <LargeButton label="Login" />
         <div className="account-signup-container">
           <div className="have-account">
             <p >Don't have an account?</p>
           </div>
           <div>
-            <button className="sign-up-button">sign up</button>
+            <SmallButton label="Signup"/>
           </div>          
         </div>       
       </div>
