@@ -3,8 +3,14 @@ import FormInput from "../../components/FormInput";
 import "./signUp.css";
 import LargeButton from "../../components/LargeButton";
 import SmallButton from "../../components/SmallButton";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+  const navigate = useNavigate()
+
+  const navigateTo = () => {
+    navigate("/login")
+  }
   return (
     <div className="container">
       <div className="left-side">
@@ -20,7 +26,7 @@ function SignUp() {
             <p className="have-account">Already have an account?</p>
           </div>
           <div>
-          <SmallButton label="login"/>
+          <SmallButton onClick={navigateTo} label="login"/>
           </div>          
         </div>
       </div>

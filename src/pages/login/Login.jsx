@@ -3,11 +3,13 @@ import "./Login.css";
 import FormInput from "../../components/FormInput";
 import LargeButton from "../../components/LargeButton";
 import SmallButton from "../../components/SmallButton";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
     // Function to update username state
     const handleUsernameChange = (event) => {
@@ -18,6 +20,12 @@ const Login = () => {
     const handlePasswordChange = (event) => {
       setPassword(event.target.value);
     };
+
+    const navigateTo = () => {
+      navigate("/signup")
+    }
+
+    
 
   return (
     <div className="container">
@@ -45,7 +53,7 @@ const Login = () => {
             <p >Don't have an account?</p>
           </div>
           <div>
-            <SmallButton label="Signup"/>
+            <SmallButton onClick={navigateTo} label="Signup"/>
           </div>          
         </div>       
       </div>
