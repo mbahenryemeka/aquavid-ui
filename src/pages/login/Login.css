@@ -15,8 +15,11 @@
   height: 100%;
   color: white;
   border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   border:none; 
 }
+
 .login-text {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
