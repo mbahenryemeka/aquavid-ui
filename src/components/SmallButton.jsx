@@ -1,4 +1,3 @@
-import React from 'react'
 import "./SmallButton.css"
 
 function SmallButton({label, onClick}) {
