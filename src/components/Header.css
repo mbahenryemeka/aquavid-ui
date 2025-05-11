@@ -2,3 +2,29 @@
   background-color: red;
   padding: 1em;
 }
+
+.header-logos-container {
+  display: flex;
+
+}
+
+.menu-icon {
+  margin-left: 10px;
+  width: 42px;
+  height: 29.16px;
+  
+}
+
+.menu-aquavid-icon{
+  display: flex;
+  align-items: center;
+  gap:20px
+}
+
+.form-input {
+  border: 2px solid #757575;
+  width: 622px;
+  border-radius: 5px;
+  padding-left: 20px; 
+
+}
