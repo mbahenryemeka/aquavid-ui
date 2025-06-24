@@ -2,3 +2,11 @@
   background-color: rgb(41, 31, 118);
   padding: 1em;
 }
+
+.side-bar {
+  border: 2px solid black;
+  width: 288px;
+  height: 921px;
+  background-color: #F3F3F3;
+  margin-top: 0;
+}

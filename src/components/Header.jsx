@@ -19,7 +19,7 @@ function Header() {
           <div className="menu-aquavid-icon">
             <img src={MenuIcon} className="menu-icon" />
             <img src={AquavidLogo} className="aquavid-icon" />
-            <FormInput placeholder="search" className="form-input" />
+            <FormInput placeholder="search" className="form-input" type="search" />
             <img src={SmallEllipes} />
             <img src={Phantom} className="phantom" />
             <img src={PhanStand} className="phanstand" />

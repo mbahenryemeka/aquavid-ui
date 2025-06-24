@@ -9,7 +9,9 @@ function Home() {
     <div>
      {/* header */}
      <Header />
-     
+     <div className='side-bar'>
+
+     </div>
     </div>
   )
 }
