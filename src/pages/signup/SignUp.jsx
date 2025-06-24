@@ -15,12 +15,14 @@ function SignUp() {
     <div className="container">
       <div className="left-side">
         <p className="signup-text">Sign Up</p>
-        <FormInput placeholder="Full Name" type="text" />
-        <FormInput placeholder="Username" type="text" />
-        <FormInput placeholder="Email Address" type="email" />
-        <FormInput placeholder="Password" type="password" />
-        <FormInput placeholder="Confirm Password" type="password" />
-        <LargeButton label="Sign up" />
+        <form>
+          <FormInput placeholder="Full Name" type="text" />
+          <FormInput placeholder="Username" type="text" />
+          <FormInput placeholder="Email Address" type="email" />
+          <FormInput placeholder="Password" type="password" />
+          <FormInput placeholder="Confirm Password" type="password" />
+          <LargeButton label="Sign up" type="submit"/>
+        </form>
         <div className="mini-container">
           <div>
             <p className="have-account">Already have an account?</p>
