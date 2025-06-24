@@ -31,23 +31,26 @@ const Login = () => {
     <div className="container">
       <div className="left-side">
         <p className="login-text">Login</p>
-         {/* Pass value and onChange to FormInput */}
-         <FormInput 
-          placeholder="Username" 
-          type="text" 
-          value={username} 
-          onChange={handleUsernameChange} 
-          required
-        />
-        <FormInput 
-          placeholder="Password" 
-          type="password" 
-          value={password} 
-          onChange={handlePasswordChange} 
-          required
-        />       
-        <p className="forget-password">forget password?</p> 
-        <LargeButton label="Login" />
+         {/* Pass value and onChange to FormInput and  Wrap inputs and button inside a form*/}
+         <form>
+          <FormInput 
+            placeholder="Username" 
+            type="text" 
+            value={username} 
+            onChange={handleUsernameChange} 
+            required
+          />
+          <FormInput 
+            placeholder="Password" 
+            type="password" 
+            value={password} 
+            onChange={handlePasswordChange} 
+            required
+          />       
+          <p className="forget-password">forget password?</p>
+             {/* Trigger form submit */}
+          <LargeButton label="Login" type="submit"/>
+        </form>
         <div className="account-signup-container">
           <div className="have-account">
             <p >Don't have an account?</p>
