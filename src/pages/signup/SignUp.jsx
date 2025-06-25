@@ -13,14 +13,7 @@ function SignUp() {
   };
 
   function signUp(formData) {
-    const fullname = formData.get("fullname");
-    const email = formData.get("email");
-    const username = formData.get("username");
-    const password = formData.get("password");
-    console.log(username);
-    console.log(password);
-    console.log(fullname);
-    console.log(email);
+   Object.fromEntries(formData)
   }
   return (
     <div className="container">

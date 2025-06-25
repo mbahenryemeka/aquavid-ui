@@ -25,10 +25,7 @@ const Login = () => {
   };
 
   function login(formData) {
-    const username = formData.get("username");
-    const password = formData.get("password");
-    console.log(username);
-    console.log(password);
+   Object.fromEntries(formData)
   }
 
   return (
