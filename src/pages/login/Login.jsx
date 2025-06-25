@@ -25,26 +25,37 @@ const Login = () => {
       navigate("/signup")
     }
 
-    
+    function handleSubmit (event) {
+      event.preventDefault();
+      alert("Hello, Henry!");
+      console.log("submitted")
+      const formData = new FormData(event.currentTarget);
+      const username = formData.get("username");
+      const password = formData.get("password");
+      console.log(username);
+      console.log(password);
+    }
 
   return (
     <div className="container">
       <div className="left-side">
         <p className="login-text">Login</p>
          {/* Pass value and onChange to FormInput and  Wrap inputs and button inside a form*/}
-         <form>
+         <form onSubmit={handleSubmit} method="post">
           <FormInput 
             placeholder="Username" 
             type="text" 
             value={username} 
-            onChange={handleUsernameChange} 
+            onChange={handleUsernameChange}
+            name="username" 
             required
           />
           <FormInput 
             placeholder="Password" 
             type="password" 
             value={password} 
-            onChange={handlePasswordChange} 
+            onChange={handlePasswordChange}
+            name="password"
             required
           />       
           <p className="forget-password">forget password?</p>
