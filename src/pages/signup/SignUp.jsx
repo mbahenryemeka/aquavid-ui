@@ -11,15 +11,26 @@ function SignUp() {
   const navigateTo = () => {
     navigate("/login")
   }
+
+   function signUp(formData) {  
+      const fullname= formData.get("fullname");
+      const email=formData.get("email");
+      const username = formData.get("username");
+      const password = formData.get("password");
+      console.log(username);
+      console.log(password);
+      console.log(fullname);
+      console.log(email);      
+    }
   return (
     <div className="container">
       <div className="left-side">
         <p className="signup-text">Sign Up</p>
-        <form>
-          <FormInput placeholder="Full Name" type="text" />
-          <FormInput placeholder="Username" type="text" />
-          <FormInput placeholder="Email Address" type="email" />
-          <FormInput placeholder="Password" type="password" />
+        <form action={signUp}>
+          <FormInput placeholder="Full Name" type="text" name="fullname"/>
+          <FormInput placeholder="Username" type="text" name="username"/>
+          <FormInput placeholder="Email Address" type="email" name="email"/>
+          <FormInput placeholder="Password" type="password" name="password"/>
           <FormInput placeholder="Confirm Password" type="password" />
           <LargeButton label="Sign up" type="submit"/>
         </form>

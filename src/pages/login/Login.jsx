@@ -25,15 +25,11 @@ const Login = () => {
       navigate("/signup")
     }
 
-    function handleSubmit (event) {
-      event.preventDefault();
-      alert("Hello, Henry!");
-      console.log("submitted")
-      const formData = new FormData(event.currentTarget);
+    function login(formData) {   
       const username = formData.get("username");
       const password = formData.get("password");
       console.log(username);
-      console.log(password);
+      console.log(password);      
     }
 
   return (
@@ -41,7 +37,7 @@ const Login = () => {
       <div className="left-side">
         <p className="login-text">Login</p>
          {/* Pass value and onChange to FormInput and  Wrap inputs and button inside a form*/}
-         <form onSubmit={handleSubmit} method="post">
+         <form action={login}>
           <FormInput 
             placeholder="Username" 
             type="text" 
